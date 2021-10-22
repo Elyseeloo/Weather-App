@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Weather App</title>
+</head>
+
+<body>
+
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("navigation");
+    if (x.className === "nav") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav";
+    }
+  }
+  </script>
+
+
+  <section class="header">
+    <video autoplay loop class="video-background" muted plays-inline>
+      <source src="videos/background-video.mp4" type="video/mp4" />
+    </video>
+    <section>
+
+        <ul>
+          <li>
+            <div class="logo-img">
+              <img class="logo" src="images/logo.svg" />
+            </div>
+          </li>
+
+          <nav class="nav" id=navigation>
+          <li>
+            <a class="active" href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+          <li>
+            <a href="#">About Weatherly</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+        </nav>
+
+        </ul>
+    </section>
+
+    <section class="weather-form">
+      <div class="flex-box">
+        <form action="/" method="post">
+          <label for="cityName">How's the weather?</label>
+          <input id="cityInput" type="text" name="cityName" placeholder="Enter city name..." />
+          <button class="button" type="submit">Let's Find Out</button>
+        </form>
+      </div>
+    </section>
+  </section>
+
+</body>
+
+</html>
+
+https://www.youtube.com/watch?v=quFZ99fdKrk&t=306s&ab_channel=EasyTutorials
+https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+https://stackoverflow.com/questions/37357402/css-button-animation-getting-bigger
