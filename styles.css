@@ -1,60 +1,18 @@
 
+
 body {
   background: rgb(241,250,238);
   background: linear-gradient(0deg, rgba(241,250,238,0.4) 0%, rgba(69,123,157,1) 100%);
-  box-sizing: border-box;
   color: rgb(241,250,238);
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   text-align: center;
   margin: 0;
   padding: 0;
-}
-
-.header {
-  background: rgb(241,250,238);
-  background: linear-gradient(0deg, rgba(241,250,238,0.2) 0%, rgba(69,123,157,1) 100%);
-  height: 100vh;
-}
-
-.video-background {
-  position: absolute;
-  justify-content: center;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  height: auto;
-  width: auto;
-  z-index: -1;
-}
-
-.flex-box {
-  display: flex;
-}
-
-.logo-img {
-  float:left;
-}
-
-.logo {
-  margin-left: 20px;
-  padding-top: 13px;
-  height: 40px;
-  width: 100%;
-  text-align: center;
-
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
-  background-color: #1D3557;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/************* Nav *************/
 .nav {
   overflow: hidden;
 }
@@ -81,6 +39,119 @@ li a:hover {
   display: none;
 }
 
+.logo-img {
+  float:left;
+}
+
+.logo {
+  margin-left: 20px;
+  padding-top: 13px;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1D3557;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/************* Search Bar Section *************/
+
+.video-background {
+  position: absolute;
+  justify-content: center;
+  right: 0;
+  bottom: 0;
+  background-size: contain;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.flex-box {
+  display: flex;
+}
+
+h1 {
+  margin-top: 10%;
+}
+
+label {
+  font-size: 50px;
+}
+
+input {
+  border: none;
+  width: 100%;
+  height: 30%;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(241,250,238);
+  font-size: 30px;
+  border-radius: 20px;
+  padding: 5px;
+  margin-top: 50px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+input[type="text"], textarea {
+
+  background-color: #1D3557;
+}
+
+::placeholder{
+  color: #a8dadc;
+}
+
+.weather-form {
+  margin: 15% 30% 30% 30%;
+}
+
+.button {
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 15px;
+  margin: 30px;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f48c06;
+  color: #1D3557;
+  box-shadow: 0 7px #2C4C63;
+}
+
+.button:hover:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  background-color: #e85d04;
+  box-shadow: 0 5px #1D3557;
+}
+
+.icon-box {
+  text-align: center;
+}
+
+.weather-icon {
+  height: 200px;
+  width: 200px;
+  padding: 20px;
+}
+
+.return.btn {
+  margin-top: 100px;
+}
+
+/************* Mobile CSS *************/
 @media screen and (max-width: 660px) {
   .nav li a {
     display: none;
@@ -106,77 +177,4 @@ li a:hover {
     display: block;
     text-align: left;
   }
-}
-
-label {
-  font-size: 50px;
-}
-
-input {
-  border: none;
-  width: 100%;
-  height: 30%;
-  font-family: 'Montserrat', sans-serif;
-  color: rgb(241,250,238);
-  font-size: 30px;
-  border-radius: 20px;
-  padding: 5px;
-  margin-top: 50px;
-  text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
-
-::placeholder{
-  color: #a8dadc;
-}
-
-input[type="text"], textarea {
-
-  background-color: #1D3557;
-}
-
-.weather-form {
-  margin: 15% 30% 30% 30%;
-}
-
-.button {
-  border: none;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 15px;
-  margin: 30px;
-  width: 200px;
-  height: 40px;
-  font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f48c06;
-  color: #1D3557;
-;
-  box-shadow: 0 7px #2C4C63;
-}
-
-.button:hover:active {
-  transform: translate(0px, 5px);
-  -webkit-transform: translate(0px, 5px);
-  background-color: #e85d04;
-  box-shadow: 0 5px #1D3557;
-}
-
-h1 {
-  margin-top: 10%;
-}
-
-.icon-box {
-  text-align: center;
-}
-
-.weather-icon {
-  height: 200px;
-  width: 200px;
-  padding: 20px;
-}
-
-.return.btn {
-  margin-top: 100px;
 }
